@@ -517,8 +517,10 @@ h1{
     background-image: url(../images/news/sub_cover.jpg);
     background-size: cover;
 }
-#sub_cover{
-    background-image: url(../images/news/sub_cover@2x.jpg);
+@media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
+  #sub_cover{
+      background-image: url(../images/news/sub_cover@2x.jpg);
+  }
 }
 
 #sub_cover h2 {
